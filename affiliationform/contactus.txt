@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+ <title>HOME PAGE</title>
+</head>
+
+<body background="web_image.jpg">
+<img src="logo.jpg" width="100" height="100">
+<br>
+
+<!-- Main content -->
+<h1><font face="Gunplay-Regular" size="20">Contact Us</font></h1>
+
+<p><Font face="Origin Bold" size="2">
+In case of any enquiry, kindly contact us at</p>
+<br>
+<br>
+<p><font face="Champagne & Limousines Bold" size="5">
+<p>shivangisaxena92@gmail.com
+<br>
+vidya.vnvgmail.com
+<p><font face="Champagne & Limousines Bold" size="2"> Have an amazing shopping experience!</font>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<img src="footer.jpg" width="1000">
+</body>
+</html>

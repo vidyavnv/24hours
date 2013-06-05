@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+ <title>Products</title>
+</head>
+
+<body background="web_image.jpg">
+<img src="logo.jpg" width="100" height="100">
+<br>
+
+<!-- Main content -->
+<h1><font face="Gunplay-Regular" size="20">Olympus XZ-1 Digital Camera</font></h1>
+
+<p><Font face="Origin Bold" size="2">
+Product Features
+Color: Black</p>
+<ul>
+
+<li>10-megapixel CCD sensor with the TruePic V Image Processor</li>
+iZUIKO f1.8-2.5 6.0-24mm [28-112 mm equiv.] (4x zoom) lens for improved shooting in low-light scenarios
+Capture all the action in crisp 720p HD video at 30 frames-per-second
+3-inch OLED monitor; six creative Art Filters
+Capture images and HD video to SD/SDHC memory cards (not included)
+
+</p>
+<br>
+<br>
+<p><font face="Champagne & Limousines Bold" size="5">
+<p>shivangisaxena92@gmail.com
+<br>
+vidya.vnvgmail.com
+<p><font face="Champagne & Limousines Bold" size="2"> Have an amazing shopping experience!</font>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<img src="footer.jpg" width="1000">
+</body>
+</html>

@@ -1,0 +1,67 @@
+<?php
+
+$dat=mysql_connect("localhost","root","");
+if (!$dat)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+ if (mysql_query("CREATE DATABASE IF NOT EXISTS Project",$dat))
+  {
+  echo "Database created <br>";
+  }
+else
+  {
+  echo "<br>Error creating database: " . mysql_error();
+  }
+
+mysql_select_db("Project",$dat);   
+
+?>
+
+
+--------------------------------
+
+<h1>GET A CAR</h1>
+
+<form method='post' action=''>
+	Location <input class ='i' type='text' name='location' placeholder='Enter Location'/> <br>
+	Date <input class ='i' type='text' name='rdate' placeholder='yyyy-mm-dd'/> <br>
+	From time <input class ='i' type='text' name='from_time' placeholder='hr-min-sec'/><br>
+	To time <input class ='i' type='text' name='to_time' placeholder='hr-min-sec'/><br>
+	<input type='submit' name='submit' value='Get a car!'/><br>
+</form>
+
+<?php
+include('db.php');
+static $rid1=1234;
+if(isset($_POST['submit']))
+{
+if (mysql_query("CREATE TABLE IF NOT EXISTS reservation(
+location varchar(50),
+rdate date,
+from_time time,
+to_time time,
+res_id int primary key auto_increment
+)",$dat))
+ {
+  echo "<br>table created";
+ // INSERT INTO `project`.`reservation` (`location`, `rdate`, `from_time`, `to_time`, `res_id`) VALUES ('New Delhi', '2012-11-02', '1000', '1200', '12345');
+ //echo $_POST['location'];
+ 
+$q="INSERT INTO reservation VALUES ('$_POST[location]','$_POST[rdate]','$_POST[from_time]','$_POST[to_time]','$rid1')";
+ if (!mysql_query($q,$dat))
+  {
+  die('Error: ' . mysql_error());
+  }
+echo "1 record added";
+ }
+else
+  {
+  echo "<br>".mysql_error();
+  } 
+ $rid++;
+ ?>
+
+<?php
+}
+?>
